@@ -1,0 +1,9 @@
+[
+    {
+        "name":"QR Code",
+        "type":"Technology",
+        "img":"https://media.istockphoto.com/id/1358621997/vector/qr-code-smartphone-scanner-linear-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=ePiWZHIbseW9GwmM498rRKC_Dvk8IsKv41nqnC8iZhQ=",
+        "appid":"qrcode",
+        "applink":"http://localhost:5500/src/app/qrcode.html"
+    }
+]

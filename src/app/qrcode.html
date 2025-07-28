@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .option-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .option-bar label {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+        .option-bar select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+        .form-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-section label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #444;
+        }
+        .form-section input[type="text"],
+        .form-section input[type="tel"],
+        .form-section input[type="email"],
+        .form-section textarea {
+            width: calc(100% - 22px); /* Account for padding and border */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        .form-section textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px; /* Space between buttons */
+            margin-top: 10px; /* Space above buttons */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        }
+        .button-group button {
+            flex: 1; /* Distribute space evenly */
+            min-width: 150px; /* Minimum width for buttons */
+        }
+        button {
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #saveQrBtn {
+            background-color: #28a745; /* Green color for save button */
+        }
+        #saveQrBtn:hover {
+            background-color: #218838;
+        }
+
+        .qr-code-output {
+            margin-top: 30px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .qr-code-output h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        #qrcode {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px; /* Reserve space for the QR code */
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.05);
+            margin-bottom: 15px; /* Space below QR code and above save button */
+        }
+        #qrcode canvas {
+            display: block; /* Remove extra space below canvas */
+        }
+        /* Hide all form sections by default and show only the active one with JavaScript */
+        .form-section {
+            display: none;
+        }
+        .form-section.active {
+            display: block;
+        }
+        #wifiEncryption{
+            color: #333;
+            font-size: 15px;
+            padding: 9px;
+            border-radius: 5px;
+            border-color: rgba(128, 128, 128, 0.365);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+
+        <div class="option-bar">
+            <label for="qrType">Select QR Code Type:</label>
+            <select id="qrType">
+                <option value="text">Normal Text/URL</option>
+                <option value="contact">Contact Card (VCARD)</option>
+                <option value="phone">Phone Number</option>
+                <option value="wifi">Wi-Fi Connection</option>
+            </select>
+        </div>
+
+        <div id="textForm" class="form-section active">
+            <label for="qrText">Enter Text or URL:</label>
+            <textarea id="qrText" placeholder="e.g., Hello World! or https://myshop.netlify.app"></textarea>
+        </div>
+
+        <div id="contactForm" class="form-section">
+            <label for="contactName">Name:</label>
+            <input type="text" id="contactName" placeholder="Sai/ Nang">
+
+            <label for="contactPhone">Phone:</label>
+            <input type="tel" id="contactPhone" placeholder="09*****">
+
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" placeholder="123@example.com">
+
+            <label for="contactAddress">Address:</label>
+            <input type="text" id="contactAddress" placeholder="Nam Kham, Shan State">
+        </div>
+
+        <div id="phoneForm" class="form-section">
+            <label for="phoneNumber">Enter Phone Number:</label>
+            <input type="tel" id="phoneNumber" placeholder="09*****">
+        </div>
+
+        <div id="wifiForm" class="form-section">
+            <label for="wifiSSID">Wi-Fi Network Name (SSID):</label>
+            <input type="text" id="wifiSSID" placeholder="MyHomeNetwork">
+
+            <label for="wifiPassword">Password (if any):</label>
+            <input type="text" id="wifiPassword" placeholder="YourWiFiPassword">
+
+            <label for="wifiEncryption">Security Type:</label>
+            <select id="wifiEncryption">
+                <option value="WPA">WPA/WPA2</option>
+                <option value="WEP">WEP</option>
+                <option value="nopass">No Password</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button id="generateQrBtn">Generate</button>
+            <button id="saveQrBtn" style="display: none;">Save as image</button>
+        </div>
+
+        <div class="qr-code-output">
+            <h2>Your QR Code:</h2>
+            <div id="qrcode">
+                <p>QR code will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const qrTypeSelect = document.getElementById('qrType');
+        const textForm = document.getElementById('textForm');
+        const contactForm = document.getElementById('contactForm');
+        const phoneForm = document.getElementById('phoneForm');
+        const wifiForm = document.getElementById('wifiForm');
+        const generateQrBtn = document.getElementById('generateQrBtn');
+        const saveQrBtn = document.getElementById('saveQrBtn'); // Get the save button
+        const qrcodeDiv = document.getElementById('qrcode');
+
+        // Function to show/hide form sections based on selected QR type
+        function showFormSection() {
+            const selectedType = qrTypeSelect.value;
+            // Hide all sections first
+            textForm.classList.remove('active');
+            contactForm.classList.remove('active');
+            phoneForm.classList.remove('active');
+            wifiForm.classList.remove('active');
+
+            // Show the relevant section
+            if (selectedType === 'text') {
+                textForm.classList.add('active');
+            } else if (selectedType === 'contact') {
+                contactForm.classList.add('active');
+            } else if (selectedType === 'phone') {
+                phoneForm.classList.add('active');
+            } else if (selectedType === 'wifi') {
+                wifiForm.classList.add('active');
+            }
+            // Clear previous QR code and hide save button
+            qrcodeDiv.innerHTML = '<p>QR code will appear here after generation.</p>';
+            saveQrBtn.style.display = 'none'; // Hide save button until QR is generated
+        }
+
+        // Event listener for type selection change
+        qrTypeSelect.addEventListener('change', showFormSection);
+
+        // Initial display of the correct form section
+        showFormSection();
+
+        // Event listener for QR code generation button
+        generateQrBtn.addEventListener('click', () => {
+            const selectedType = qrTypeSelect.value;
+            let qrData = "";
+            let fileNameSuffix = "QR_Code"; // Default filename suffix
+
+            if (selectedType === 'text') {
+                qrData = document.getElementById('qrText').value;
+                fileNameSuffix = "Text_QR";
+            } else if (selectedType === 'contact') {
+                const name = document.getElementById('contactName').value;
+                const phone = document.getElementById('contactPhone').value;
+                const email = document.getElementById('contactEmail').value;
+                const address = document.getElementById('contactAddress').value;
+                qrData = `BEGIN:VCARD\nVERSION:3.0\nN:${name}\nTEL:${phone}\nEMAIL:${email}\nADR:${address}\nEND:VCARD`;
+                fileNameSuffix = "Contact_QR";
+            } else if (selectedType === 'phone') {
+                const phoneNumber = document.getElementById('phoneNumber').value;
+                qrData = `tel:${phoneNumber}`;
+                fileNameSuffix = `Phone_QR_${phoneNumber.replace(/\D/g, '')}`; // Clean phone number for filename
+            } else if (selectedType === 'wifi') {
+                const ssid = document.getElementById('wifiSSID').value;
+                const password = document.getElementById('wifiPassword').value;
+                const encryption = document.getElementById('wifiEncryption').value;
+                if (encryption === "nopass") {
+                    qrData = `WIFI:T:nopass;S:${ssid};;`;
+                } else {
+                    qrData = `WIFI:T:${encryption};S:${ssid};P:${password};;`;
+                }
+                fileNameSuffix = `WiFi_QR_${ssid.replace(/[^a-zA-Z0-9]/g, '_')}`; // Clean SSID for filename
+            }
+
+            // Clear previous QR code before generating a new one
+            qrcodeDiv.innerHTML = '';
+            saveQrBtn.style.display = 'none'; // Hide save button initially
+
+            if (qrData) {
+                try {
+                    // Generate QR code using qrcode.js
+                    new QRCode(qrcodeDiv, {
+                        text: qrData,
+                        width: 256, // Increased size for better quality download
+                        height: 256,
+                        colorDark : "#000000",
+                        colorLight : "#ffffff",
+                        correctLevel : QRCode.CorrectLevel.H
+                    });
+
+                    // Wait a moment for the canvas to be rendered by qrcode.js
+                    // This is a common workaround as qrcode.js renders asynchronously
+                    setTimeout(() => {
+                        const canvas = qrcodeDiv.querySelector('canvas');
+                        if (canvas) {
+                            // Make the save button visible
+                            saveQrBtn.style.display = 'block';
+
+                            // Store the canvas element and desired filename on the save button
+                            // (or directly in a global variable if you prefer)
+                            saveQrBtn.dataset.canvasId = 'qrcode'; // Link to the div holding the canvas
+                            saveQrBtn.dataset.filename = `qrcode_${fileNameSuffix}.png`;
+                        } else {
+                            qrcodeDiv.innerHTML = '<p>Error generating QR code. Please try again.</p>';
+                        }
+                    }, 100); // Small delay, might need adjustment depending on browser/load
+                } catch (e) {
+                    qrcodeDiv.innerHTML = '<p>An error occurred during QR code generation.</p>';
+                    console.error("QR Code Generation Error:", e);
+                }
+            } else {
+                qrcodeDiv.innerHTML = '<p>Please enter data to generate a QR code.</p>';
+            }
+        });
+
+        // Event listener for Save QR Code button
+        saveQrBtn.addEventListener('click', () => {
+            const canvasId = saveQrBtn.dataset.canvasId;
+            const filename = saveQrBtn.dataset.filename || 'qrcode_image.png';
+
+            const qrCodeContainer = document.getElementById(canvasId);
+            const canvas = qrCodeContainer ? qrCodeContainer.querySelector('canvas') : null;
+
+            if (canvas) {
+                // Get the data URL from the canvas
+                const imageDataUrl = canvas.toDataURL('image/png');
+
+                // Create a temporary link element
+                const a = document.createElement('a');
+                a.href = imageDataUrl;
+                a.download = filename; // Set the download filename
+
+                // Programmatically click the link to trigger download
+                document.body.appendChild(a); // Append to body is good practice
+                a.click();
+                document.body.removeChild(a); // Clean up the temporary link
+            } else {
+                alert('No QR code found to save. Please generate one first.');
+            }
+        });
+    </script>
+</body>
+</html>

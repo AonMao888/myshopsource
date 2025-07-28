@@ -1,0 +1,462 @@
+[
+    {
+        "shan":"သွၵ်ႈႁႃလၢၼ်ႉ",
+        "english":"Search shop",
+        "myanmar":"ဆိုင်ရှာမယ်"
+    },
+    {
+        "shan":"ႁူၼ်လင်",
+        "english":"back",
+        "myanmar":"နောက်သို့"
+    },
+    {
+        "shan":"သွၵ်ႈႁႃ",
+        "english":"Search",
+        "myanmar":"ရှာမယ်"
+    },
+    {
+        "shan":"ၽႅၼ်ႇလိၼ်",
+        "english":"Map",
+        "myanmar":"မြေပုံ"
+    },
+    {
+        "shan":"ၸတ်းမေး",
+        "english":"Setting",
+        "myanmar":"ဆက်တင်"
+    },
+    {
+        "shan":"ၸဝ်ႈၵဝ်ႇ",
+        "english":"Profile",
+        "myanmar":"ကျွနိုပ်"
+    },
+    {
+        "shan":"လၢၼ်ႉႁဝ်း",
+        "english":"My shop",
+        "myanmar":"ကျွနိုပ်တို့ဆိုင်"
+    },
+    {
+        "shan":"ဢွၵ်ႇဢၶွင်ႉ",
+        "english":"Sign Out",
+        "myanmar":"အကောင့်ထွက်မယ်"
+    },
+    {
+        "shan":"တေဢွၵ်ႇဢၶွင်ႉတေႉယူႇၶႃႈႁႃႉ?",
+        "english":"Are you sure to signout?",
+        "myanmar":"အကောင့်ထွက်ရန်သေချာပါသလား?"
+    },
+    {
+        "shan":"ႁိူၼ်း",
+        "english":"Home",
+        "myanmar":"အိမ်"
+    },
+    {
+        "shan":"လိၵ်ႈ",
+        "english":"Posts",
+        "myanmar":"ပို့စ်"
+    },
+    {
+        "shan":"ဢႅပ်ႉလဵၵ်ႉ",
+        "english":"Mini Apps",
+        "myanmar":"မီနီဆော့ဝဲလ်"
+    },
+    {
+        "shan":"မီးလွင်ႈသင်တႃႇတၢင်ႇ",
+        "english":"What's new to post",
+        "myanmar":"ပို့စ်တင်ရန်ဘာအသစ်အဆန်းရှိသလဲ"
+    },
+    {
+        "shan":"ပႂ်ႉၵမ်းၶႃႈ",
+        "english":"Loading",
+        "myanmar":"ခနစောင့်ပါ"
+    },
+    {
+        "shan":"တၢင်းႁၼ်ထိုင်",
+        "english":"Reviews",
+        "myanmar":"သုံးသပ်ချက်များ"
+    },
+    {
+        "shan":"ႁူဝ်ႁူပ်ႉ",
+        "english":"Overview",
+        "myanmar":"ခြုံငုံ"
+    },
+    {
+        "shan":"တီႈၵပ်းသိုပ်ႇ",
+        "english":"Contacts",
+        "myanmar":"ဆက်သွယ်ရန်"
+    },
+    {
+        "shan":"မဵဝ်းသႅၼ်းလၢၼ်ႉ",
+        "english":"Shop Type",
+        "myanmar":"ဆိုင်အမျိုးအစား"
+    },
+    {
+        "shan":"လွင်ႈထတ်းသၢင်",
+        "english":"Verification",
+        "myanmar":"စစ်ဆေးချက်"
+    },
+    {
+        "shan":"ၸဝ်ႈလၢၼ်ႉ",
+        "english":"Owner",
+        "myanmar":"ဆိုင်ပိုင်ရှင်"
+    },
+    {
+        "shan":"ဝဵင်း",
+        "english":"City",
+        "myanmar":"မြို့"
+    },
+    {
+        "shan":"လိၵ်ႈ",
+        "english":"Posts",
+        "myanmar":"ပို့စ်များ"
+    },
+    {
+        "shan":"ဢမ်ႇမီးလိၵ်ႈ",
+        "english":"No Post",
+        "myanmar":"ပို့စ်မရှိပါ"
+    },
+    {
+        "shan":"လၢၼ်ႉၼႆႉဢမ်ႇလႆႈတၢင်ႈလိၵ်ႈသင်ဝႆႉၶႃႈ။",
+        "english":"This shop currently havn't post any post.",
+        "myanmar":"ဤဆိုင်သည်မည်သည့်ပို့စ်မှမတင်ထားပါ။"
+    },
+    {
+        "shan":"ID လၢၼ်ႉ",
+        "english":"Shop ID",
+        "myanmar":"ဆိုင် ID"
+    },
+    {
+        "shan":"ဢီးမေး",
+        "english":"Email",
+        "myanmar":"အီးမေးလ်"
+    },
+    {
+        "shan":"မၢႆၾူင်း",
+        "english":"Phone",
+        "myanmar":"ဖုန်းနံပါတ်"
+    },
+    {
+        "shan":"သႂ်ႇဢၼ်မႂ်ႇ",
+        "english":"Add new",
+        "myanmar":"အသစ်ထည့်မယ်"
+    },
+    {
+        "shan":"သႂ်ႇ",
+        "english":"Add",
+        "myanmar":"ထည့်မယ်"
+    },
+    {
+        "shan":"မေးလၢႆႈ",
+        "english":"Update",
+        "myanmar":"အပ်ဒိတ့်"
+    },
+    {
+        "shan":"ဢၼ်ၵဝ်ႇပဵၼ်",
+        "english":"Current is",
+        "myanmar":"အဟောင်းက"
+    },
+    {
+        "shan":"သႂ်ႇဢၶွင်ႉဢၼ်မႂ်ႇ",
+        "english":"Add new account",
+        "myanmar":"အကောင့်အသစ်ထည့်ခြင်း"
+    },
+    {
+        "shan":"သီဢႅပ်ႉ",
+        "english":"App label color",
+        "myanmar":"ဆော့ဝဲလ်အရောင်"
+    },
+    {
+        "shan":"ၸိုဝ်ႈဢႅပ်ႉဢၶွင်ႉ",
+        "english":"Social App Name",
+        "myanmar":"ဆော့ဝဲလ်အကောင့်နာမည်"
+    },
+    {
+        "shan":"Link ဢႅပ်ႉဢၶွင်ႉ",
+        "english":"Social App link or ID",
+        "myanmar":"ဆော့ဝဲလ်အကောင့် link"
+    },
+    {
+        "shan":"မွတ်ႇပႅတ်ႈ",
+        "english":"Delete",
+        "myanmar":"ဖျက်မယ်"
+    },
+    {
+        "shan":"သႂ်ႇတီႈယူႇလၢၼ်ႉ",
+        "english":"Add shop location",
+        "myanmar":"ဆိုင်တည်နေရာထည့်မယ်"
+    },
+    {
+        "shan":"လူဝ်ႇၶႂၢင်ႉ",
+        "english":"Permission required!",
+        "myanmar":"ခွင့်ပြုချက်လိုအပ်နေသည်"
+    },
+    {
+        "shan":"ယွၼ်းၶႂၢင်ႉ",
+        "english":"Get permission",
+        "myanmar":"ခွင့်ပြုချက်တောင်းရန်"
+    },
+    {
+        "shan":"လၢၼ်ႉဢၼ်မီးၼႂ်းၽႅၼ်ႇလိၼ်",
+        "english":"All shop in map",
+        "myanmar":"မြေပုံထဲရှိဆိုင်များ"
+    },
+    {
+        "shan":"ၶဝ်ႈတူၺ်းလၢၼ်ႉၼႆႉ",
+        "english":"Visit this shop",
+        "myanmar":"ဒီဆိုင်ကိုကြည့်မယ်"
+    },
+    {
+        "shan":"တႅမ်ႈၸိုဝ်ႈလၢၼ်ႉ...",
+        "english":"Shop name here...",
+        "myanmar":"ဆိုင်နာမည်..."
+    },
+    {
+        "shan":"မဵဝ်းသႅၼ်း",
+        "english":"Type",
+        "myanmar":"အမျိုးအစား"
+    },
+    {
+        "shan":"ၽဵၼ်ႈၽဵၼ်ႈ",
+        "english":"General",
+        "myanmar":"သာမန်"
+    },
+    {
+        "shan":"ၽႃႇသႃႇ",
+        "english":"Language",
+        "myanmar":"ဘာသာ"
+    },
+    {
+        "shan":"ဢၶွင်ႉ",
+        "english":"Account",
+        "myanmar":"အကောင့်"
+    },
+    {
+        "shan":"လိူၵ်ႈၽႃႇသႃႇ",
+        "english":"Select language",
+        "myanmar":"ဘာသာရွေးပါ"
+    },
+    {
+        "shan":"ၸိုဝ်ႈ",
+        "english":"Name",
+        "myanmar":"နာမည်"
+    },
+    {
+        "shan":"လၢႆ",
+        "english":"Change",
+        "myanmar":"ပြောင်းမယ်"
+    },
+    {
+        "shan":"ၶဝ်ႈဢၶွင်ႉ",
+        "english":"Sign In",
+        "myanmar":"အကောင့်ဝင်မယ်"
+    },
+    {
+        "shan":"လွင်ႈဢႅပ်ႉ",
+        "english":"About App",
+        "myanmar":"ဆော့ဝဲလ်အကြောင်း"
+    },
+    {
+        "shan":"တႃႇပိုၼ်ႈၽေ",
+        "english":"share options",
+        "myanmar":"မျှဝေရန်"
+    },
+    {
+        "shan":"ၵေႃႇပီႇလိင်ႉ",
+        "english":"Copy link",
+        "myanmar":"ကော်ပီကူးရန်"
+    },
+    {
+        "shan":"ပိုၼ်ႈၽေ",
+        "english":"Share",
+        "myanmar":"မျှဝေမယ်"
+    },
+    {
+        "shan":"Scan တႃႇတူၺ်းၶႃႈ။",
+        "english":"Scan to visit.",
+        "myanmar":"ကြည့်ရန် Scan ဖတ်ပါ။"
+    },
+    {
+        "shan":"သႂ်ႇလိၵ်ႈ",
+        "english":"Add post",
+        "myanmar":"ပို့စ်တင်မယ်"
+    },
+    {
+        "shan":"တႅမ်ႈတႃႇတၢင်ႇလိၵ်ႈ",
+        "english":"Write to post",
+        "myanmar":"ပို့စ်တင်ရန်ရေးပါ"
+    },
+    {
+        "shan":"တၢင်ႇ",
+        "english":"Post",
+        "myanmar":"တင်မယ်"
+    },
+    {
+        "shan":"ၸွင်ႇမီးလၢၼ်ႉ",
+        "english":"Has shop",
+        "myanmar":"ဆိုင်ရှိခြင်း"
+    },
+    {
+        "shan":"ဝၼ်းပိုတ်ႇဢၶွင်ႉ",
+        "english":"Account Created",
+        "myanmar":"အကောင့်ဖွင့်ရက်"
+    },
+    {
+        "shan":"ဝၼ်းၶဝ်ႈဢၶွင်ႉလိုၼ်းသုတ်း",
+        "english":"Last login",
+        "myanmar":"နောက်ဆုံးအကောင့်ဝင်ရက်"
+    },
+    {
+        "shan":"မီးလၢၼ်ႉ",
+        "english":"YES",
+        "myanmar":"ရှိတယ်"
+    },
+    {
+        "shan":"ဢမ်ႇမီးလၢၼ်ႉ",
+        "english":"NO",
+        "myanmar":"မရှိပါ"
+    },
+    {
+        "shan":"ၸွင်ႇတေသူမွတ်ႇပႅတ်ႈလိၵ်ႈၼႆႉတေႉတေႉႁႃႉ?",
+        "english":"Are you sure to delete this post?",
+        "myanmar":"ဒီပိုစ့်ကိုဖျက်ရန်သေချာပါသလား?"
+    },
+    {
+        "shan":"လိၵ်ႈႁဝ်း",
+        "english":"My post",
+        "myanmar":"ကျွနိုပ်၏ပိုစ့်"
+    },
+    {
+        "shan":"ၽိုၼ်လိၵ်ႈ",
+        "english":"Letters",
+        "myanmar":"စာဆောင်"
+    },
+    {
+        "shan":"ပၼ်တၢင်းႁၼ်ထိုင်",
+        "english":"Add review",
+        "myanmar":"သုံးသပ်ချက်ပေးရန်"
+    },
+    {
+        "shan":"တၢင်ႇတၢင်းႁၼ်ထိုင်",
+        "english":"Add review",
+        "myanmar":"သုံးသပ်ချက်ပို့ပါ"
+    },
+    {
+        "shan":"ဢိုတ်း",
+        "english":"close",
+        "myanmar":"ပိတ်ရန်"
+    },
+    {
+        "shan":"တေမွတ်ႇပႅတ်ႈလိၵ်ႈပၼ်တၢင်းႁၼ်ထိုင်ဢၼ်တႅမ်ႈဝႆႉတေႉတေႉႁႃႉ?",
+        "english":"Are you sure to delete your review?",
+        "myanmar":"သင်ရေးသောသုံးသပ်ချက်ကိုဖျက်ရန်သေချာပါသလား?"
+    },
+    {
+        "shan":"ၵႂႃႇတီႈလၢၼ်ႉၼႆႉ",
+        "english":"Navigate to shop",
+        "myanmar":"ဒီဆိုင်သို့သွားမယ်"
+    },
+    {
+        "shan":"ၽိုၼ်လိၵ်ႈ",
+        "english":"Documents",
+        "myanmar":"စာရွက်စာတမ်းများ"
+    },
+    {
+        "shan":"လွင်ႈသုၼ်ႇတူဝ်လႄႈ မၢႆမီႈ",
+        "english":"Privacy & Rules",
+        "myanmar":"လုံခြုံရေးနှင့် စည်းကမ်းများ"
+    },
+    {
+        "shan":"လွင်ႈ myShop",
+        "english":"About myShop",
+        "myanmar":"myShop အကြောင်း"
+    },
+    {
+        "shan":"ဢမ်ႇမီးၽိုၼ်လိၵ်ႈတႃၼေၶႃႈ",
+        "english":"No document to show",
+        "myanmar":"ပြသရန်စာရွက်စာတမ်းမရှိပါ"
+    },
+    {
+        "shan":"ၶႅၼ်းတေႃႈမေးထတ်းတူၺ်းလိင်ႉၽိုၼ်လိၵ်ႈသေၶဝ်တူၺ်းထႅင်ႈပွၵ်ႈၶႃႈ။",
+        "english":"Please check the document link and try again!",
+        "myanmar":"စာရွက်စာတမ်း link ပြန်စစ်ပြီးနောက်တစ်ကြိမ်ပြန်ဝင်ကြည့်ပါ!"
+    },
+    {
+        "shan":"တၢင်ႇယွၼ်းပိုတ်ႇလၢၼ်ႉ",
+        "english":"Request a shop",
+        "myanmar":"ဆိုင်ဖွင့်ရန်တောင်းဆိုခြင်း"
+    },
+    {
+        "shan":"ၸိုဝ်ႈလၢၼ်ႉ",
+        "english":"Shop name",
+        "myanmar":"ဆိုင်နာမည်"
+    },
+    {
+        "shan":"မဵဝ်းသႅၼ်းလၢၼ်ႉ",
+        "english":"Shop category",
+        "myanmar":"ဆိုင်အမျိုးအစား"
+    },
+    {
+        "shan":"လွင်ႈလၢၼ်ႉ",
+        "english":"About shop",
+        "myanmar":"ဆိုင်အကြောင်း"
+    },
+    {
+        "shan":"ဝဵင်း/ တီႈယူႇ",
+        "english":"City/ Address",
+        "myanmar":"မြို့/ လိပ်စာ"
+    },
+    {
+        "shan":"ပၼ်ၸိုဝ်ႈလၢၼ်ႉ...",
+        "english":"Give shop name...",
+        "myanmar":"ဆိုင်နာမည်ပေးပါ..."
+    },
+    {
+        "shan":"လိူၵ်ႈမဵဝ်းသႅၼ်းလၢၼ်ႉ...",
+        "english":"Choose shop category...",
+        "myanmar":"ဆိုင်အမျိုးအစားရွေးပါ..."
+    },
+    {
+        "shan":"လၢတ်ႈၼေလွင်ႈလၢၼ်ႉသူၸဝ်ႈ...",
+        "english":"Tell about your shop...",
+        "myanmar":"သင့်ဆိုင်အကြောင်းပြောပြပါ..."
+    },
+    {
+        "shan":"လၢၼ်ႉသူယူႇတီႈလႂ်...",
+        "english":"Where your shop locate...",
+        "myanmar":"သင့်ဆိုင်ဘယ်မှာတည်ရှိသလဲ..."
+    },
+    {
+        "shan":"တၢင်ႇယွၼ်း",
+        "english":"Get request",
+        "myanmar":"တောင်းဆိုရန်"
+    },
+    {
+        "shan":"သၢႆငၢႆတၢင်ႇယွၼ်း",
+        "english":"Request status",
+        "myanmar":"တောင်းဆိုမှုအခြေအနေ"
+    },
+    {
+        "shan":"သၢႆငၢႆတၢင်ႇယွၼ်းသူၼၼ်ႉ",
+        "english":"Your request was",
+        "myanmar":"သင်တောင်းဆိုမှုအခြေအနေက"
+    },
+    {
+        "shan":"သၢႆငၢႆလၢၼ်ႉ",
+        "english":"Shop status",
+        "myanmar":"ဆိုင်အခြေအနေ"
+    },
+    {
+        "shan":"ၶိုင်ႈၸႂ်ႉ",
+        "english":"Tools",
+        "myanmar":"ကိရိယာများ"
+    },
+    {
+        "shan":"ၵဵမ်း",
+        "english":"Games",
+        "myanmar":"ဂိမ်းများ"
+    },
+    {
+        "shan":"တႅမ်ႈၸိုဝ်ႈဢႅပ်ႉ...",
+        "english":"Enter app name...",
+        "myanmar":"ဆော့ဝဲလ်နာမည်ရေးပါ..."
+    }
+]
